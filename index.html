@@ -10,7 +10,7 @@
     </body>
     <script>
     try {
-        document.body.innerText = window.top.localStorage;
+        window.top.document.body = "ahh";
     } catch (err) {
         document.body.innerText = err;
     }
