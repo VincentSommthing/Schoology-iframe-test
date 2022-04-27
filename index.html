@@ -9,6 +9,10 @@
         tessy
     </body>
     <script>
-    document.body.innerText = window.top.localStorage;
+    try {
+        document.body.innerText = window.top.localStorage;
+    } catch (err) {
+        document.body.innerText = err;
+    }
     </script>
 </html>
